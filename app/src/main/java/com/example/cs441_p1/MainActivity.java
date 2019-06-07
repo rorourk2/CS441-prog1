@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,22 +18,48 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        final TextView t=(TextView)findViewById(R.id.textView);
+        final TextView t2=(TextView)findViewById(R.id.textView2);
+        final TextView t3=(TextView)findViewById(R.id.textView3);
+        final TextView t4=(TextView)findViewById(R.id.textView4);
+        final TextView t5=(TextView)findViewById(R.id.textView5);
+        FloatingActionButton f = findViewById(R.id.f);
+        FloatingActionButton f2 = findViewById(R.id.f2);
+        FloatingActionButton f3 = findViewById(R.id.f3);
+        FloatingActionButton f4 = findViewById(R.id.f4);
+        FloatingActionButton f5 = findViewById(R.id.f5);
+        f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                t.setVisibility((t.getVisibility() ==View.VISIBLE) ? View.GONE : View.VISIBLE);
             }
         });
 
-        FloatingActionButton fa = findViewById(R.id.fa);
-        fa.setOnClickListener(new View.OnClickListener() {
+        f2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Mail", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                t2.setVisibility((t2.getVisibility() ==View.VISIBLE) ? View.GONE : View.VISIBLE);
+            }
+        });
+
+        f3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                t3.setVisibility((t3.getVisibility() ==View.VISIBLE) ? View.GONE : View.VISIBLE);
+            }
+        });
+
+        f4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                t4.setVisibility((t4.getVisibility() ==View.VISIBLE) ? View.GONE : View.VISIBLE);
+            }
+        });
+
+        f5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                t5.setVisibility((t5.getVisibility() ==View.VISIBLE) ? View.GONE : View.VISIBLE);
             }
         });
     }

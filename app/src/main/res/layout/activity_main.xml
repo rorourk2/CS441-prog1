@@ -22,22 +22,61 @@
 
     <include layout="@layout/content_main" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fa"
+        android:id="@+id/f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:translationX="25dp"
+        android:translationY="75dp"
+        app:backgroundTint="#FF9800"
 
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/f2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="100dp"
+        android:translationY="75dp"
+        app:backgroundTint="#3F51B5"
+
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/f3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="175dp"
+        android:translationY="75dp"
+        app:backgroundTint="#4CAF50"
+
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/f4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="250dp"
+        android:translationY="75dp"
+        app:backgroundTint="#FF0000"
+
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/f5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="325dp"
+        android:translationY="75dp"
+        app:backgroundTint="#9C27B0"
+
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="178dp" />
 
 
 </android.support.design.widget.CoordinatorLayout>
